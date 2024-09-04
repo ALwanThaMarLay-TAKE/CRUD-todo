@@ -8,8 +8,13 @@ const CreateTask = ({setTasks , tasks}) => {
     }
     
  const handleSubmit  = () => {
-    if(task){
-    setTasks([...tasks,task])
+  const newTask = {
+    id : Date.now(),
+    task : task,
+    isDone : false
+  }
+    if(newTask){
+    setTasks([...tasks,newTask])
     setTask('')}
     
     
