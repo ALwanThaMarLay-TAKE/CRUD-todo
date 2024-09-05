@@ -3,7 +3,7 @@ import Task from './Task';
 // import TasksContext from '../contexts/TasksContext';
 import useTaskStore from '../store/useTaskStore';
 
-const TaskLists = ({jobs ,handleDelete,handleCheckup}) => {
+const TaskLists = () => {
   // const {tasks} = useContext(TasksContext) no more context hook
   const {tasks} = useTaskStore()
 
