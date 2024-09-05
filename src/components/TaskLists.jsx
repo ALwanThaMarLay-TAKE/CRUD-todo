@@ -1,9 +1,11 @@
 import React, { useContext } from 'react'
 import Task from './Task';
-import TasksContext from '../contexts/TasksContext';
+// import TasksContext from '../contexts/TasksContext';
+import useTaskStore from '../store/useTaskStore';
 
 const TaskLists = ({jobs ,handleDelete,handleCheckup}) => {
-  const {tasks} = useContext(TasksContext)
+  // const {tasks} = useContext(TasksContext) no more context hook
+  const {tasks} = useTaskStore()
 
 
       

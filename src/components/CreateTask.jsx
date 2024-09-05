@@ -1,5 +1,6 @@
 import React, { useContext, useEffect, useMemo, useState } from 'react'
-import TasksContext from '../contexts/TasksContext'
+// import TasksContext from '../contexts/TasksContext'
+import useTaskStore from '../store/useTaskStore'
 
 const CreateTask = () => {
 
@@ -9,7 +10,8 @@ const CreateTask = () => {
         setTask(e.target.value)
         
     }
-    const {setTasks , tasks} = useContext(TasksContext)
+    // const {setTasks , tasks} = useContext(TasksContext)
+    const {addTask } = useTaskStore()
     
  const handleSubmit  = (event) => {
   event.preventDefault()
@@ -20,12 +22,13 @@ const CreateTask = () => {
     isDone : false
   }
     if(newTask){
-    setTasks([...tasks,newTask])
+      addTask(newTask)
+    // setTasks([...tasks,newTask]) no more context 
     setTask('')}
     
     
  }
-    //use form tag for enter key avaivable
+    
   return (
     <form className=' flex w-full'>
         <input type="text" value={task} onChange={handleTask} className='border flex-grow border-slate-500  bg-slate-200 py-2 px-4' />

@@ -1,22 +1,24 @@
 import React, { useContext, useRef, useState } from "react";
-import { motion, transform, useScroll } from "framer-motion";
-import TasksContext from "../contexts/TasksContext";
+
+// import TasksContext from "../contexts/TasksContext";
+import useTaskStore from "../store/useTaskStore";
 
 const Task = ({ task: { id, task, isDone } }) => {
   const [del, setDel] = useState(false);
-  const { handleCheckup, handleDelete } = useContext(TasksContext);
+  // const { handleCheckup, handleDelete } = useContext(TasksContext); no more context hook
+  const {doneTask , deleteTask} = useTaskStore()
 
   const HandleDelete = () => {
     if (confirm("Are you sure to Delete ?")) {
       setDel(true);
       setTimeout(() => {
-        handleDelete(id);
+        deleteTask(id);
       }, "1000");
     }
   };
 
   const HandleCheckup = () => {
-    handleCheckup(id);
+    doneTask(id);
   };
 
   return (
