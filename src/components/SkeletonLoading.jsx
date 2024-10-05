@@ -1,7 +1,7 @@
 import React from "react";
 
 const SkeletonLoading = () => {
-  console.log("loading");
+
   return (
     <div className="animate-pulse">
       <div

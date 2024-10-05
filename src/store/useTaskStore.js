@@ -8,8 +8,8 @@ const useTaskStore = create((set) => ({
         tasks : state.tasks.filter( el => el.id !== taskId)
         
       }))),
-      setTasks : (tasks) => (set({
-        tasks : tasks
+      setTasks : (data) => (set({
+        tasks : data
       })),
       addTask : (newTask) => (set((state) => {
         return {
@@ -21,7 +21,10 @@ const useTaskStore = create((set) => ({
         return {
             tasks : state.tasks.map( el => el.id === taskId? {...el, isDone : !el.isDone} : el)
         }
-      } ))
+      } )),
+      updateId : (update) => (set( (state) => ({
+        tasks  : state.tasks.map( el => el.task === update.task ? {...el , id : update.id} : el )
+      } )))
 
     
 }))
