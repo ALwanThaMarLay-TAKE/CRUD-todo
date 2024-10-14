@@ -2,8 +2,103 @@
   "tasks": [
     {
       "id": 1,
-      "task": "asdfasdf",
+      "task": "Learn HTML basics",
       "isDone": true
+    },
+    {
+      "id": 2,
+      "task": "Understand HTML5 semantic tags",
+      "isDone": false
+    },
+    {
+      "id": 3,
+      "task": "Learn CSS fundamentals",
+      "isDone": true
+    },
+    {
+      "id": 4,
+      "task": "Practice Flexbox layout",
+      "isDone": false
+    },
+    {
+      "id": 5,
+      "task": "Learn CSS Grid",
+      "isDone": false
+    },
+    {
+      "id": 6,
+      "task": "Create a responsive navigation bar",
+      "isDone": false
+    },
+    {
+      "id": 7,
+      "task": "Understand JavaScript basics",
+      "isDone": true
+    },
+    {
+      "id": 8,
+      "task": "Learn DOM manipulation",
+      "isDone": true
+    },
+    {
+      "id": 9,
+      "task": "Learn ES6+ features (let, const, arrow functions)",
+      "isDone": true
+    },
+    {
+      "id": 10,
+      "task": "Build a simple JavaScript calculator",
+      "isDone": false
+    },
+    {
+      "id": 11,
+      "task": "Learn Fetch API and async/await",
+      "isDone": false
+    },
+    {
+      "id": 12,
+      "task": "Understand version control with Git",
+      "isDone": true
+    },
+    {
+      "id": 13,
+      "task": "Learn basic Node.js",
+      "isDone": false
+    },
+    {
+      "id": 14,
+      "task": "Set up a local server with Express",
+      "isDone": false
+    },
+    {
+      "id": 15,
+      "task": "Understand REST API principles",
+      "isDone": false
+    },
+    {
+      "id": 16,
+      "task": "Learn React basics (components, JSX, props)",
+      "isDone": true
+    },
+    {
+      "id": 17,
+      "task": "Understand React state and hooks",
+      "isDone": true
+    },
+    {
+      "id": 18,
+      "task": "Build a simple React To-Do app",
+      "isDone": false
+    },
+    {
+      "id": 19,
+      "task": "Understand backend development with Node.js and Express",
+      "isDone": false
+    },
+    {
+      "id": 20,
+      "task": "Deploy a web app to a cloud platform",
+      "isDone": false
     }
   ]
 }
